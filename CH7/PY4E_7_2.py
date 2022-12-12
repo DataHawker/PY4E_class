@@ -25,7 +25,7 @@ for x in x_list:
     ipos = x.find(':')+1
     value = x[ipos : ].strip()
     value = float(value)
-    total = value +total
+    total = value + total
     
 avg_DSPAM = total / count
 
