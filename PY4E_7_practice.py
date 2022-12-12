@@ -9,6 +9,7 @@
 #         print(a)
 # print(f"There are {a_line} AAA batery orders here.")
 
+#cleaner - use fname and type of file such as 'orders' and filter to 'order'
 fname = input('Enter the file name: ')
 orders = open(fname)
 count = 0 
