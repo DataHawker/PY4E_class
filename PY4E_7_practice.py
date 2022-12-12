@@ -12,10 +12,15 @@
 #cleaner - use fname and type of file such as 'orders' and filter to 'order'
 fname = input('Enter the file name: ')
 orders = open(fname)
-count = 0 
+AAAorderCount = 0 
+USBcorderCount = 0
+
 for order in orders:
     order = order.rstrip()
     if order.__contains__('AAA'):
-        count = count +1
-        print(order)
-print(f"There are {count} AAA batery orders in the {fname} file. ")    
+        AAAorderCount = AAAorderCount +1
+    if order.__contains__('USB'):
+        USBcorderCount = USBcorderCount +1
+        
+print(f"There are {AAAorderCount} AAA batery orders in the {fname} file. ")    
+print(f"There are {USBcorderCount} USB-C orders in the {fname} file. ")   
