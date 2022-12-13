@@ -15,18 +15,17 @@
 
 handle = open('mbox-short.txt')
 line = []
-emails = {}
+di = {}
 
 for line in handle:
     if line.startswith('From '):
-        i = line.split()[1]
-        emails[i] = emails.get(i,0)+1
-star = None
-times = None
-for emails,i in emails.items():
-    if star is None or i > times:
-        star = emails
-        times = i
+        email = line.split()[1]
+        di[email] = di.get(email,0)+1
 
-print(star, times)
-
+largest = -1
+top_email = None
+for k,v in di.items():
+    if v > largest:
+        largest = v
+        top_email = k
+print(top_email, largest)
