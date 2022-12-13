@@ -7,7 +7,9 @@
 
 # Once you have accumulated the counts for each hour, print out the counts, 
 # sorted by hour as shown below.
+from pathlib import Path
 
+Path.cwd()
 name = input("Enter file:")
 if len(name) < 1:
     name = "mbox-short.txt"
