@@ -1,8 +1,6 @@
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup 
 
-sample = urllib.request.urlopen('https://py4e-data.dr-chuck.net/comments_42.html').read()
-actual = urllib.request.urlopen('https://py4e-data.dr-chuck.net/comments_1705072.html').read()
 x = True
 while x:
     user = input("What file should I scan? Options: sample or actual: ").lower()
