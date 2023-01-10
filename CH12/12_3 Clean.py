@@ -8,7 +8,7 @@ ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 url = input('Enter URL: ')
-if len(url) <1:
+if len(url) < 1:
     url = 'http://python-data.dr-chuck.net/known_by_Conar.html'
 def user_inputs():
     x = int(input('Enter count: '))
